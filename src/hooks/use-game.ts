@@ -227,7 +227,6 @@ export function useGame() {
     if (!audioRef.current) {
       audioRef.current = new Audio();
       audioRef.current.preload = "auto";
-      audioRef.current.crossOrigin = "anonymous";
     }
     audioRef.current.src = track.previewUrl;
   }, [track]);
